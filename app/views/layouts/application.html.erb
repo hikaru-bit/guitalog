@@ -10,6 +10,30 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <li>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fas fa-sign-out-alt nav-link text-light">ログアウト</i>
+        <% end %>
+      </li>
+    <% else %>
+    <li>
+      <%= link_to root_path do %>
+      <i class= "fas fa-guitar nav-link text-light">Guitalog</i>
+      <% end %>
+    </li>
+      <li>
+        <%= link_to new_user_registration_path do %>
+          <i class= "fas fa-user-plus nav-link text-light">新規登録</i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to new_user_session_path do %>
+        <i class="fas fa-sign-in-alt nav-link text-light">ログイン</i>
+        <% end %>
+      </li>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
