@@ -29,6 +29,7 @@ body {
 .title h1{
   padding: 100px 0 0 100px;
   color: red;
+  font-family: 'Noto Serif JP',游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
 }
 
 .about{
@@ -48,4 +49,9 @@ body {
    
   /* 背景画像が読み込まれる前に表示される背景のカラー */
   background-color: #464646;
+}
+
+.about h2{
+   padding: 100px 0 0 100px;
+  font-family: 'Noto Serif JP',游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
 }
