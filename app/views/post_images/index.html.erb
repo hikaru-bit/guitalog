@@ -1,0 +1,8 @@
+<% @post_images.each do |post_image| %>
+<div>
+  <%= attachment_image_tag post_image, :image %>
+  <p>タイトル：<%= post_image.title %></p>
+  <p>説明：<%= post_image.caption %></p>
+  <p>ユーザーネーム：<%= post_image.user.name %></p>
+</div>
+<% end %>
